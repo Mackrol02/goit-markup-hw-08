@@ -291,8 +291,12 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .centr {
+    transform: translateX(10%);
+  }
   .advantages {
+    justify-content: center;
     margin-top: 50px;
     min-width: 1200px;
     display: flex;

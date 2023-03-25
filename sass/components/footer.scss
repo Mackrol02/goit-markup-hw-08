@@ -150,7 +150,7 @@ footer {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   footer {
     height: 600px;
-    width: 767px;
+    min-width: 767px;
   }
 }
 
@@ -205,13 +205,14 @@ footer {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
   footer {
     height: 252px;
+    min-width: 1600px;
   }
   .footercen {
-    min-width: 1200px;
     display: flex;
+    transform: translateX(8%);
   }
   .footer__name {
     margin-bottom: 9px;
@@ -240,7 +241,10 @@ footer {
     min-width: 206px;
   }
 }
-
+.form__zapisz {
+  position: relative;
+  transform: translate(20%, 320%);
+}
 .from__footer {
   margin-top: 92px;
   margin-left: 30px;
@@ -249,13 +253,13 @@ footer {
   margin-top: 20px;
 
   &__email {
-    min-width: 320px;
+    min-width: 358px;
     height: 50px;
     position: absolute;
     transform: translate(-15%, 100%);
   }
   &__button {
-    width: 180px;
+    width: 200px;
     height: 50px;
     margin-left: 10px;
     position: absolute;
