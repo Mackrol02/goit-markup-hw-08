@@ -1,7 +1,7 @@
 .modal {
-  top: 10%;
-  left: 34%;
-  width: 500px;
+  top: 5%;
+  left: 5%;
+  width: 450px;
   height: 550px;
   background-color: var(--white-color);
   position: fixed;
@@ -24,10 +24,13 @@
     cursor: pointer;
   }
   &__text {
+    justify-content: center;
     text-align: center;
     font-weight: 700;
     font-size: 20px;
     margin-top: 40px;
+    width: 370px;
+    margin-left: 30px;
   }
 }
 
@@ -60,7 +63,7 @@
   }
 
   &__name {
-    width: 420px;
+    width: 360px;
     height: 30px;
     display: flex;
     flex-direction: column;
@@ -76,7 +79,7 @@
   }
 
   &__tel {
-    width: 420px;
+    width: 360px;
     height: 30px;
     display: flex;
     flex-direction: column;
@@ -92,7 +95,7 @@
   }
 
   &__email {
-    width: 420px;
+    width: 360px;
     height: 30px;
     display: flex;
     flex-direction: column;
@@ -114,7 +117,7 @@
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     margin-top: 4px;
-    width: 420px;
+    width: 360px;
     &:focus {
       border-color: var(--blue-color);
       outline: none;
@@ -123,7 +126,7 @@
 
   &__namesvg {
     position: absolute;
-    top: 20.75%;
+    top: 24.75%;
     left: 50px;
     --color1: #212121;
     &:focus {
@@ -133,7 +136,7 @@
   }
   &__telsvg {
     position: absolute;
-    top: 32%;
+    top: 36%;
     left: 50px;
     fill: #212121;
     &:focus {
@@ -143,7 +146,7 @@
   }
   &__emailsvg {
     position: absolute;
-    top: 43.5%;
+    top: 47.5%;
     left: 50px;
     fill: #212121;
 
@@ -204,7 +207,8 @@ textarea {
 }
 
 .submit {
-  margin-left: 150px;
+  margin-left: 110px;
+  margin-bottom: 10px;
 
   &__button {
     width: 200px;
@@ -213,5 +217,25 @@ textarea {
     border-radius: 4px;
     border: none;
     color: var(--color-footer-email-input);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal {
+    left: 20%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    left: 20%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    left: 30%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    left: 35%;
   }
 }

@@ -1,12 +1,12 @@
 footer {
   background: var(--footercolor);
-  height: 252px;
+  height: 600px;
+  max-width: 479px;
 }
 .footercen {
-  margin: auto;
-  width: 1200px;
-  display: flex;
+  text-align: center;
 }
+
 .footer__name {
   margin-bottom: 9px;
   padding-top: 60px;
@@ -26,6 +26,7 @@ footer {
 }
 .address__space {
   margin-top: 9px;
+  color: var(--grey-color);
 }
 .address__mail {
   margin-top: 9px;
@@ -105,7 +106,7 @@ footer {
   color: var(--color-footer-email-input);
 
   &__footer {
-    margin-top: 92px;
+    margin-top: 30px;
     margin-left: 30px;
     font-size: 14px;
     font-weight: 700;
@@ -115,10 +116,11 @@ footer {
   margin-top: 20px;
 
   &__email {
-    width: 358px;
+    min-width: 450px;
     height: 50px;
     background-color: var(--color-input-footer);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    transform: translateX(-4%);
 
     &__email:active {
       border: 1px solid rgba(255, 255, 255, 0.3);
@@ -132,7 +134,132 @@ footer {
     width: 200px;
     height: 50px;
     font-size: 16px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  &__span {
+    margin-left: -45px;
+  }
+  &__send {
+    position: absolute;
+    margin-left: 24px;
+    transform: translateY(-10%);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  footer {
+    height: 600px;
+    width: 767px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    min-height: 463px;
+    width: 768x;
+  }
+  .footercen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      " add soc"
+      " for for ";
+  }
+  address {
+    grid-area: add;
+  }
+  .social {
+    grid-area: soc;
+  }
+  .form {
+    grid-area: for;
+  }
+  .input__button {
+    transform: translate(-115%, 120%);
+  }
+  .input__email {
+    transform: translateX(25%);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  footer {
+    height: 463px;
+    min-width: 1199px;
+  }
+  .footercen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      " add soc"
+      " for for ";
+  }
+  address {
+    grid-area: add;
+  }
+  .social {
+    grid-area: soc;
+  }
+  .form {
+    grid-area: for;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    height: 252px;
+  }
+  .footercen {
+    min-width: 1200px;
+    display: flex;
+  }
+  .footer__name {
+    margin-bottom: 9px;
+    padding-top: 60px;
+  }
+
+  .address__space {
+    margin-top: 9px;
+  }
+  .address__mail {
+    margin-top: 9px;
+  }
+
+  .address__tel {
+    margin-top: 9px;
+  }
+
+  .social {
+    margin-left: 35px;
+    margin-top: 72px;
+  }
+  .social__name {
+    margin-bottom: 20px;
+  }
+  .social__icon {
+    min-width: 206px;
+  }
+}
+
+.from__footer {
+  margin-top: 92px;
+  margin-left: 30px;
+}
+.input {
+  margin-top: 20px;
+
+  &__email {
+    min-width: 320px;
+    height: 50px;
+    position: absolute;
+    transform: translate(-15%, 100%);
+  }
+  &__button {
+    width: 180px;
+    height: 50px;
     margin-left: 10px;
+    position: absolute;
+    transform: translate(150%, 80%);
   }
   &__span {
     margin-left: -45px;
