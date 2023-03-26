@@ -334,6 +334,9 @@
       display: flex;
       min-width: 1200px;
     }
+    &__name {
+      min-width: 1200px;
+    }
   }
   .work {
     justify-content: space-around;
