@@ -112,16 +112,23 @@ footer {
     font-weight: 700;
   }
 }
+.form__zapisz {
+  transform: translateX(30%);
+  position: relative;
+}
 .input {
   margin-top: 20px;
+  transform: translateX(-35%);
+  grid-template-columns:
+    "email"
+    "but";
 
   &__email {
     min-width: 450px;
     height: 50px;
     background-color: var(--color-input-footer);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    transform: translateX(-4%);
-
+    grid-area: email;
     &__email:active {
       border: 1px solid rgba(255, 255, 255, 0.3);
     }
@@ -136,6 +143,7 @@ footer {
     font-size: 16px;
     margin-left: 5px;
     margin-top: 10px;
+    grid-area: but;
   }
   &__span {
     margin-left: -45px;
@@ -202,6 +210,75 @@ footer {
   }
   .form {
     grid-area: for;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    height: 252px;
+    min-width: 1200px;
+  }
+  .footercen {
+    display: flex;
+    transform: translateX(8%);
+  }
+  .footer__name {
+    margin-bottom: 9px;
+    padding-top: 60px;
+  }
+
+  .address__space {
+    margin-top: 9px;
+  }
+  .address__mail {
+    margin-top: 9px;
+  }
+
+  .address__tel {
+    margin-top: 9px;
+  }
+
+  .social {
+    margin-left: 35px;
+    margin-top: 72px;
+  }
+  .social__name {
+    margin-bottom: 20px;
+  }
+  .social__icon {
+    min-width: 206px;
+  }
+}
+.form__zapisz {
+  position: relative;
+  transform: translate(20%, 320%);
+}
+.from__footer {
+  margin-top: 92px;
+  margin-left: 30px;
+}
+.input {
+  margin-top: 20px;
+
+  &__email {
+    min-width: 358px;
+    height: 50px;
+    position: absolute;
+    transform: translate(-15%, 100%);
+  }
+  &__button {
+    width: 200px;
+    height: 50px;
+    margin-left: 10px;
+    position: absolute;
+    transform: translate(150%, 80%);
+  }
+  &__span {
+    margin-left: -45px;
+  }
+  &__send {
+    position: absolute;
+    margin-left: 24px;
+    transform: translateY(-10%);
   }
 }
 

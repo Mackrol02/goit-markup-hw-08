@@ -229,6 +229,7 @@ a {
   .header__name {
     transform: translateX(-15%);
   }
+
   .grid {
     transform: translateX(15%);
     gap: 10px;
@@ -237,9 +238,49 @@ a {
       "mail"
       "tel";
   }
+  header {
+    justify-content: space-evenly;
+  }
   .width__page {
     min-width: 1199px;
+    height: 80px;
+    transform: translateX(10%);
   }
+  .header__tel {
+    grid-area: tel;
+  }
+  .header__mail {
+    grid-area: mail;
+  }
+  .navigation__studio::after,
+  .navigation__studio:visited {
+    transform: translateY(0);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    display: block;
+  }
+  .header__name {
+    position: relative;
+    transform: translateX(-15%);
+  }
+  .grid {
+    transform: translateX(15%);
+
+    display: flex;
+  }
+  .width__page {
+    min-width: 1200px;
+    height: 80px;
+  }
+}
+header {
+  position: absolute;
+  transform: translateX(50%);
+  justify-content: space-evenly;
+  align-items: center;
+
   .header__tel {
     grid-area: tel;
   }
@@ -265,10 +306,16 @@ a {
     display: flex;
   }
   .width__page {
-    min-width: 1200px;
+    min-width: 1600px;
+
+    height: 80px;
   }
+
   header {
-    transform: translateX(-10%);
+    position: absolute;
+    transform: translateX(60%);
+    justify-content: space-around;
+    align-items: center;
   }
   .header__tel {
     grid-area: tel;

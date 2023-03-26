@@ -54,6 +54,12 @@
     min-width: 1199px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .buttonform {
+    min-width: 1200px;
+  }
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .buttonform {
     min-width: 1600px;
