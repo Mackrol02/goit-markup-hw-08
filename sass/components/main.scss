@@ -332,7 +332,7 @@
   .client {
     &__container {
       display: flex;
-      max-width: 1200px;
+      min-width: 1200px;
     }
   }
   .work {

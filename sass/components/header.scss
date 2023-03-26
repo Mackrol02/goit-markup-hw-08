@@ -258,6 +258,9 @@ a {
     transform: translateY(50%);
     position: relative;
   }
+  .container {
+    min-width: 1200px;
+  }
 
   .grid {
     display: flex;
