@@ -41,17 +41,17 @@
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .buttonform {
-    min-width: 767px;
+    max-width: 767px;
   }
 }
 @media screen and (min-width: 768px) {
   .buttonform {
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .buttonform {
-    min-width: 1199px;
+    max-width: 1199px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -59,9 +59,9 @@
     min-width: 1200px;
   }
 }
-
+/*
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .buttonform {
     min-width: 1600px;
   }
-}
+}*/

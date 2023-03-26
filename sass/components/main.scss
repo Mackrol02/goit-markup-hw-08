@@ -73,11 +73,11 @@
   font-size: 16px;
 }
 .space__icon {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     margin-left: 30px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .work {
     justify-content: space-around;
     margin: auto;
@@ -104,15 +104,14 @@
     }
   }
 }
-
+.team img {
+  max-width: 450px;
+  height: auto;
+}
 .team {
   max-width: 479px;
   width: 100%;
   text-align: center;
-  img {
-    max-width: 450px;
-    height: auto;
-  }
 
   &__name {
     color: var(--blacklight-color);
@@ -228,19 +227,22 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  img {
+  .team img {
     max-width: 450px;
     height: auto;
   }
   .advantages {
-    min-width: 767px;
+    max-width: 767px;
   }
   .team {
-    min-width: 767px;
+    max-width: 767px;
   }
   .client {
     &__container {
-      min-width: 767px;
+      max-width: 767px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      display: grid;
     }
   }
 }
@@ -253,11 +255,12 @@
   }
   .team {
     width: 768px;
-    img {
-      max-width: 354px;
-      height: auto;
-    }
   }
+  .team img {
+    max-width: 354px;
+    height: auto;
+  }
+
   .teamcen {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -265,14 +268,13 @@
   }
   .client {
     width: 768px;
-    transform: translateX(10%);
+
     &__container {
+      display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
     }
-    &__name {
-      transform: translateX(17%);
-    }
+
     &__logo {
       max-width: 226px;
     }
@@ -281,18 +283,19 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages {
-    min-width: 1199px;
+    max-width: 1199px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
   .team {
-    min-width: 1199px;
-    img {
-      max-width: 100%;
-      height: 354px;
-    }
+    max-width: 1199px;
   }
+  .team img {
+    max-width: 100%;
+    height: 354px;
+  }
+
   .teamcen {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -300,44 +303,43 @@
   }
   .client {
     &__container {
-      min-width: 1199px;
+      max-width: 1199px;
+      display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
     }
   }
 }
 @media screen and (min-width: 1200px) {
-  .centr {
-    transform: translateX(10%);
-  }
   .advantages {
-    justify-content: center;
     margin-top: 50px;
     min-width: 1200px;
     display: flex;
   }
+
   .team {
     min-width: 1200px;
-    img {
-      max-width: 270px;
-      height: auto;
-    }
+  }
+  .team img {
+    max-width: 270px;
+    height: auto;
   }
   .teamcen {
+    min-width: 1200px;
     display: flex;
+    justify-content: space-around;
   }
   .client {
     &__container {
       display: flex;
-      min-width: 1200px;
-      transform: translateX(-9%);
+      max-width: 1200px;
     }
   }
   .work {
     justify-content: space-around;
     margin: auto;
-    min-width: 1200px;
-    transform: translateX(-5%);
+    width: 1200px;
+    display: none;
 
     &__title {
       text-align: center;
@@ -359,39 +361,46 @@
     }
   }
 }
-
+/*
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
-  .centr {
-    transform: translateX(10%);
-  }
   .advantages {
-    justify-content: center;
     margin-top: 50px;
     min-width: 1200px;
     display: flex;
+    position: relative;
+    transform: translateX(13%);
   }
   .team {
-    min-width: 1200px;
-    img {
-      max-width: 270px;
-      height: auto;
+    min-width: 1600px;
+    margin: auto;
+    position: relative;
+    transform: translateX(13%);
+    &__name {
+      position: relative;
+      transform: translateX(-13%);
     }
   }
+  .team > img {
+    max-width: 270px;
+    height: auto;
+  }
+
   .teamcen {
+    min-width: 1600px;
     display: flex;
+    margin: auto;
   }
   .client {
+    margin: auto;
     &__container {
       display: flex;
       min-width: 1200px;
-      transform: translateX(-9%);
     }
   }
   .work {
     justify-content: space-around;
     margin: auto;
-    min-width: 1200px;
-    transform: translateX(-5%);
+    min-width: 1600px;
 
     &__title {
       text-align: center;
@@ -412,4 +421,4 @@
       transform: translateY(150%);
     }
   }
-}
+}*/

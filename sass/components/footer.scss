@@ -112,13 +112,9 @@ footer {
     font-weight: 700;
   }
 }
-.form__zapisz {
-  transform: translateX(30%);
-  position: relative;
-}
+
 .input {
   margin-top: 20px;
-  transform: translateX(-35%);
   grid-template-columns:
     "email"
     "but";
@@ -158,13 +154,13 @@ footer {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   footer {
     height: 600px;
-    min-width: 767px;
+    max-width: 767px;
   }
 }
 
 @media screen and (min-width: 768px) {
   footer {
-    min-height: 463px;
+    max-height: 463px;
     width: 768x;
   }
   .footercen {
@@ -183,17 +179,11 @@ footer {
   .form {
     grid-area: for;
   }
-  .input__button {
-    transform: translate(-115%, 120%);
-  }
-  .input__email {
-    transform: translateX(25%);
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   footer {
     height: 463px;
-    min-width: 1199px;
+    max-width: 1199px;
   }
   .footercen {
     display: grid;
@@ -211,6 +201,17 @@ footer {
   .form {
     grid-area: for;
   }
+  .form__zapisz {
+    max-width: 400px;
+  }
+  .input {
+    &__button {
+      max-width: 450px;
+    }
+    &__email {
+      max-width: 200px;
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
   footer {
@@ -219,7 +220,6 @@ footer {
   }
   .footercen {
     display: flex;
-    transform: translateX(8%);
   }
   .footer__name {
     margin-bottom: 9px;
@@ -248,10 +248,7 @@ footer {
     min-width: 206px;
   }
 }
-.form__zapisz {
-  position: relative;
-  transform: translate(20%, 320%);
-}
+
 .from__footer {
   margin-top: 92px;
   margin-left: 30px;
@@ -260,17 +257,13 @@ footer {
   margin-top: 20px;
 
   &__email {
-    min-width: 358px;
+    min-width: 328px;
     height: 50px;
-    position: absolute;
-    transform: translate(-15%, 100%);
   }
   &__button {
-    width: 200px;
+    width: 180px;
     height: 50px;
     margin-left: 10px;
-    position: absolute;
-    transform: translate(150%, 80%);
   }
   &__span {
     margin-left: -45px;
@@ -281,7 +274,7 @@ footer {
     transform: translateY(-10%);
   }
 }
-
+/*
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   footer {
     height: 252px;
@@ -328,6 +321,8 @@ footer {
 }
 .input {
   margin-top: 20px;
+  position: relative;
+  transform: translateX(10%);
 
   &__email {
     min-width: 358px;
@@ -350,4 +345,4 @@ footer {
     margin-left: 24px;
     transform: translateY(-10%);
   }
-}
+}*/

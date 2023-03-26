@@ -3,18 +3,15 @@
   background-color: var(--white-color);
   color: var(--body-color);
 }
-.width__page {
-  margin: auto;
-  min-width: 479px;
-}
+
 header {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  max-width: 479;
   height: 60px;
 }
 .header__name {
-  transform: translateX(-50%);
+  position: relative;
+  transform: translate(-50%, 50%);
 }
 .header__name-blue {
   color: var(--blue-color);
@@ -189,8 +186,8 @@ a {
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .width__page {
-    min-width: 767px;
+  header {
+    min-width: 767;
   }
 }
 @media screen and (min-width: 768px) {
@@ -208,7 +205,7 @@ a {
       "mail"
       "tel";
   }
-  .width__page {
+  header {
     width: 768px;
   }
   .header__tel {
@@ -240,12 +237,10 @@ a {
   }
   header {
     justify-content: space-evenly;
-  }
-  .width__page {
-    min-width: 1199px;
+    max-width: 1199px;
     height: 80px;
-    transform: translateX(10%);
   }
+
   .header__tel {
     grid-area: tel;
   }
@@ -260,39 +255,29 @@ a {
 @media screen and (min-width: 1200px) {
   .navigation {
     display: block;
-  }
-  .header__name {
+    transform: translateY(50%);
     position: relative;
-    transform: translateX(-15%);
   }
-  .grid {
-    transform: translateX(15%);
 
+  .grid {
     display: flex;
+  }
+  .header__tel {
+    margin-left: 10px;
   }
   .width__page {
     min-width: 1200px;
     height: 80px;
-  }
-}
-header {
-  position: absolute;
-  transform: translateX(50%);
-  justify-content: space-evenly;
-  align-items: center;
-
-  .header__tel {
-    grid-area: tel;
-  }
-  .header__mail {
-    grid-area: mail;
-  }
-  .navigation__studio::after,
-  .navigation__studio:visited {
-    transform: translateY(0);
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
+.navigation__studio::after,
+.navigation__studio:visited {
+  transform: translateY(0);
+}
+/*
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .navigation {
     display: block;
@@ -312,10 +297,8 @@ header {
   }
 
   header {
-    position: absolute;
-    transform: translateX(60%);
-    justify-content: space-around;
-    align-items: center;
+    min-width: 1600px;
+    left: 10px;
   }
   .header__tel {
     grid-area: tel;
@@ -327,4 +310,4 @@ header {
   .navigation__studio:visited {
     transform: translateY(0);
   }
-}
+}*/

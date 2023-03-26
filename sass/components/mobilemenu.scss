@@ -45,18 +45,16 @@
 .menu-container.is-open {
   transform: translateX(0%);
 }
-button > .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-}
+
 .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
   color: var(--black-color);
 }
-
+.menu-container .menu-toggle:hover {
+  color: var(--blue-color);
+}
 .mobile-menu {
   padding: 0;
   margin: 0;
@@ -76,6 +74,7 @@ button > .menu-toggle {
   line-height: 46.88px;
   letter-spacing: 2%;
   color: var(--black-color);
+
   &:hover {
     color: var(--blue-color);
   }
@@ -161,7 +160,22 @@ button > .menu-toggle {
   .mobilecent {
     display: none;
   }
+  .menu-toggle {
+    display: none;
+  }
+
   .menu-container {
+    display: none;
+  }
+  .menu-container .menu-toggle {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu .navigation {
     display: none;
   }
 }
@@ -180,7 +194,7 @@ button > .menu-toggle {
   .menu-container {
     display: none;
   }
-}
+} /*
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .mobilecent {
     display: none;
@@ -188,4 +202,4 @@ button > .menu-toggle {
   .menu-container {
     display: none;
   }
-}
+}*/
