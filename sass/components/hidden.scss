@@ -1,8 +1,8 @@
 .modal {
-  top: 5%;
+  top: 1%;
   left: 5%;
-  width: 450px;
-  height: 550px;
+  max-width: 400px;
+  max-height: 550px;
   background-color: var(--white-color);
   position: fixed;
   z-index: 1;
@@ -12,6 +12,9 @@
   visibility: visible;
   display: block;
 
+  &__form {
+    max-width: 450px;
+  }
   &__button {
     position: absolute;
     top: 8px;
@@ -29,7 +32,7 @@
     font-weight: 700;
     font-size: 20px;
     margin-top: 40px;
-    width: 370px;
+    max-width: 370px;
     margin-left: 30px;
   }
 }
@@ -63,7 +66,7 @@
   }
 
   &__name {
-    width: 360px;
+    width: 340px;
     height: 30px;
     display: flex;
     flex-direction: column;
@@ -79,7 +82,7 @@
   }
 
   &__tel {
-    width: 360px;
+    width: 340px;
     height: 30px;
     display: flex;
     flex-direction: column;
@@ -95,7 +98,7 @@
   }
 
   &__email {
-    width: 360px;
+    width: 340px;
     height: 30px;
     display: flex;
     flex-direction: column;
@@ -117,7 +120,7 @@
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     margin-top: 4px;
-    width: 360px;
+    width: 340px;
     &:focus {
       border-color: var(--blue-color);
       outline: none;
@@ -207,7 +210,6 @@ textarea {
 }
 
 .submit {
-  margin-left: 110px;
   margin-bottom: 10px;
 
   &__button {
@@ -217,11 +219,14 @@ textarea {
     border-radius: 4px;
     border: none;
     color: var(--color-footer-email-input);
+    transform: translateX(35%);
   }
+}
+@media screen and (max-width: 479px) {
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .modal {
-    left: 20%;
+    left: 10%;
   }
 }
 @media screen and (min-width: 768px) {

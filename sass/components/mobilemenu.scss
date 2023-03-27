@@ -1,10 +1,9 @@
 .mobilecent {
   min-width: 100px;
   max-width: 1170px;
-  padding-left: 320px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+
+  top: 16px;
+  right: 16px;
 }
 .menu-toggle {
   min-height: 40px;
@@ -56,9 +55,14 @@
   color: var(--blue-color);
 }
 .mobile-menu {
-  padding: 0;
-  margin: 0;
   list-style: none;
+  top: 16px;
+  right: 16px;
+}
+.menu-mobile {
+  position: relative;
+  top: -40px;
+  left: 350px;
 }
 
 .mobile-menu .navigation {
@@ -149,11 +153,12 @@
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .menu-container {
-    width: 767px;
+    max-width: 767px;
     height: 630px;
   }
   .mobilecent {
-    padding-left: 520px;
+    top: 16px;
+    right: 16px;
   }
 }
 @media screen and (min-width: 768px) {

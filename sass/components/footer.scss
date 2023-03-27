@@ -120,7 +120,7 @@ footer {
     "but";
 
   &__email {
-    min-width: 450px;
+    max-width: 450px;
     height: 50px;
     background-color: var(--color-input-footer);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -134,7 +134,7 @@ footer {
     background-color: var(--color-bottom-footer);
     border: none;
     border-radius: 4px;
-    width: 200px;
+    max-width: 200px;
     height: 50px;
     font-size: 16px;
     margin-left: 5px;
@@ -274,7 +274,7 @@ footer {
     transform: translateY(-10%);
   }
 }
-/*
+
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   footer {
     height: 252px;
@@ -282,7 +282,7 @@ footer {
   }
   .footercen {
     display: flex;
-    transform: translateX(8%);
+    margin-left: 200px;
   }
   .footer__name {
     margin-bottom: 9px;
@@ -311,31 +311,22 @@ footer {
     min-width: 206px;
   }
 }
-.form__zapisz {
-  position: relative;
-  transform: translate(20%, 320%);
-}
+
 .from__footer {
   margin-top: 92px;
   margin-left: 30px;
 }
 .input {
   margin-top: 20px;
-  position: relative;
-  transform: translateX(10%);
 
   &__email {
-    min-width: 358px;
+    min-width: 328px;
     height: 50px;
-    position: absolute;
-    transform: translate(-15%, 100%);
   }
   &__button {
-    width: 200px;
+    width: 180px;
     height: 50px;
     margin-left: 10px;
-    position: absolute;
-    transform: translate(150%, 80%);
   }
   &__span {
     margin-left: -45px;
@@ -345,4 +336,4 @@ footer {
     margin-left: 24px;
     transform: translateY(-10%);
   }
-}*/
+}
