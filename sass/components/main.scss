@@ -201,7 +201,7 @@
   &__logo {
     border: var(--color-icon) solid 1px;
     border-radius: 4px;
-    max-width: 170px;
+    width: 170px;
     height: 92px;
     margin: 20px 0 0 20px;
 
@@ -316,6 +316,9 @@
     min-width: 1200px;
     display: flex;
   }
+  body {
+    margin-left: 70px;
+  }
 
   .team {
     min-width: 1200px;
@@ -336,6 +339,9 @@
     }
     &__name {
       min-width: 1200px;
+    }
+    &__logo {
+      max-width: 270px;
     }
   }
   .work {
@@ -364,7 +370,7 @@
     }
   }
 }
-
+/*
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .advantages {
     margin-top: 50px;
@@ -396,4 +402,4 @@
       max-width: 1600px;
     }
   }
-}
+}*/

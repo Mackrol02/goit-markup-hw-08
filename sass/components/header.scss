@@ -193,13 +193,16 @@ a {
 @media screen and (min-width: 768px) {
   .navigation {
     display: block;
+
+    position: relative;
+    transform: translateY(50%);
   }
   .header__name {
-    transform: translateX(-15%);
+    margin-top: 36px;
   }
   .grid {
     transform: translateX(15%);
-    gap: 10px;
+
     display: grid;
     grid-template-areas:
       "mail"
@@ -287,7 +290,7 @@ a {
 .navigation__studio:visited {
   transform: translateY(0);
 }
-
+/*
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .navigation {
     display: block;
@@ -320,4 +323,4 @@ a {
 .navigation__studio::after,
 .navigation__studio:visited {
   transform: translateY(0);
-}
+}*/

@@ -32,7 +32,7 @@
   top: 0;
   left: 0;
   width: 480px;
-  height: 570px;
+  height: 670px;
   padding: 32px;
   background-color: var(--white-color);
   z-index: 999;
@@ -109,7 +109,7 @@
   font-size: 34px;
   line-height: 39.84px;
   letter-spacing: 2%;
-  margin-top: 150px;
+  margin-top: 170px;
   color: var(--grey-color);
   &:hover {
     color: var(--blue-color);
@@ -154,7 +154,7 @@
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .menu-container {
     max-width: 767px;
-    height: 630px;
+    height: 670%;
   }
   .mobilecent {
     top: 16px;
