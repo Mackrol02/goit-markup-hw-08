@@ -72,12 +72,8 @@
 .size {
   font-size: 16px;
 }
-.space__icon {
-  @media screen and (max-width: 1199px) {
-    margin-left: 30px;
-  }
-}
-@media screen and (max-width: 1199px) {
+
+@media screen and (max-width: 1200px) {
   .work {
     justify-content: space-around;
     margin: auto;
