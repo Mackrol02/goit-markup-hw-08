@@ -343,36 +343,35 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .center {
-    max-width: 1440px;
-    margin-left: 100px;
+    min-width: 1440px;
   }
   .advantages {
     margin-top: 50px;
-    max-width: 1440px;
+    min-width: 1440px;
     display: flex;
   }
   .main__page {
-    max-width: 1440px;
+    min-width: 1440px;
   }
 
   .team {
-    max-width: 1440px;
+    min-width: 1440px;
   }
   .team img {
     max-width: 270px;
     height: auto;
   }
   .teamcen {
-    max-width: 1440px;
+    min-width: 1440px;
     display: flex;
   }
   .client {
     &__container {
       display: flex;
-      max-width: 1440px;
+      min-width: 1440px;
     }
     &__name {
-      max-width: 1440px;
+      min-width: 1440px;
     }
   }
   .work {
