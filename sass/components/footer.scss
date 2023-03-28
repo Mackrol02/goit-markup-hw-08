@@ -328,11 +328,14 @@ footer {
 /*.form__label {
   transform: translateX(-33%);
 }*/
+.form {
+  margin-top: 40px;
+}
 .input {
   margin-top: 20px;
 
   &__email {
-    min-width: 358px;
+    min-width: 348px;
     height: 50px;
   }
   &__button {
