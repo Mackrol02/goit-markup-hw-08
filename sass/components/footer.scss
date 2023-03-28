@@ -2,8 +2,6 @@ footer {
   background: var(--footercolor);
   height: 600px;
   max-width: 479px;
-}
-.footercen {
   text-align: center;
 }
 
@@ -155,6 +153,8 @@ footer {
   footer {
     height: 600px;
     max-width: 767px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -162,13 +162,13 @@ footer {
   footer {
     max-height: 463px;
     width: 768x;
-  }
-  .footercen {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       " add soc"
       " for for ";
+  }
+  .footercen {
   }
   address {
     grid-area: add;
@@ -184,14 +184,13 @@ footer {
   footer {
     height: 463px;
     max-width: 1199px;
-  }
-  .footercen {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       " add soc"
       " for for ";
   }
+
   address {
     grid-area: add;
   }
@@ -253,10 +252,7 @@ footer {
   margin-top: 92px;
   margin-left: 30px;
 }
-.form__zapisz {
-  position: relative;
-  transform: translateX(-32.5%);
-}
+
 .form {
   margin-top: 40px;
 }
@@ -285,11 +281,10 @@ footer {
   footer {
     height: 252px;
     min-width: 1440px;
-  }
-  .footercen {
+    justify-content: center;
     display: flex;
-    min-width: 1440px;
   }
+
   .footer__name {
     margin-bottom: 9px;
     padding-top: 60px;
@@ -322,6 +317,7 @@ footer {
   margin-top: 92px;
   margin-left: 30px;
 }
+
 .input {
   margin-top: 20px;
 

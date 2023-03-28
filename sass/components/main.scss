@@ -2,7 +2,6 @@
   margin-top: 50px;
   margin: auto;
   max-width: 450px;
-  margin: 0 15px 0 15px;
 
   &__feature2 {
     justify-content: space-around;
@@ -250,6 +249,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    margin: none;
   }
   .team {
     width: 768px;
@@ -285,6 +285,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    margin: none;
   }
   .team {
     max-width: 1199px;
@@ -313,6 +314,7 @@
     margin-top: 50px;
     min-width: 1200px;
     display: flex;
+    margin: none;
   }
 
   .team {
