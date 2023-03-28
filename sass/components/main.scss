@@ -78,9 +78,14 @@
   }
 }
 @media screen and (max-width: 1440px) {
+  .container {
+    margin: auto;
+  }
+  .work__box {
+    margin: auto;
+  }
   .work {
-    justify-content: space-around;
-    min-width: 1440px;
+    min-width: 1200px;
 
     &__title {
       text-align: center;
@@ -226,7 +231,7 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+/*@media screen and (min-width: 480px) and (max-width: 767px) {
   .team img {
     max-width: 450px;
     height: auto;
@@ -245,17 +250,18 @@
       display: grid;
     }
   }
-}
+}*/
 @media screen and (min-width: 768px) {
   .advantages {
-    width: 768px;
+    max-width: 768px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin: none;
   }
   .team {
-    width: 768px;
+    max-width: 768px;
+    margin: auto;
   }
   .team img {
     max-width: 354px;
@@ -274,6 +280,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
+      margin: auto;
     }
 
     &__logo {
@@ -282,7 +289,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+/*@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages {
     max-width: 1199px;
     display: grid;
@@ -311,8 +318,8 @@
       gap: 30px;
     }
   }
-}
-@media screen and (min-width: 1200px) {
+}*/
+/*@media screen and (min-width: 1200px) {
   .advantages {
     margin-top: 50px;
     min-width: 1200px;
@@ -345,40 +352,45 @@
     }
   }
 }
-
+*/
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .center {
-    min-width: 1440px;
+    min-width: 1200px;
+    justify-content: center;
   }
   .advantages {
     margin-top: 50px;
-    min-width: 1440px;
+    min-width: 1200px;
     display: flex;
-    margin: none;
+    margin: auto;
   }
   .main__page {
     min-width: 1440px;
   }
 
   .team {
-    min-width: 1440px;
+    min-width: 1200px;
+    margin: auto;
   }
   .team img {
     max-width: 270px;
     height: auto;
   }
   .teamcen {
-    min-width: 1440px;
+    min-width: 1200px;
     display: flex;
+    margin: auto;
   }
   .client {
-    min-width: 1440px;
+    min-width: 1200px;
+    margin: auto;
     &__container {
       display: flex;
-      min-width: 1440px;
+      min-width: 1200px;
+      margin: auto;
     }
     &__name {
-      min-width: 1440px;
+      min-width: 1200px;
     }
   }
 }
