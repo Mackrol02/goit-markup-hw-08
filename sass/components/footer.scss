@@ -286,12 +286,13 @@ footer {
   footer {
     height: 252px;
     min-width: 1440px;
-    display: block;
+    display: flex;
   }
   .footercentr {
-    min-width: 1440px;
+    min-width: 1200px;
     display: flex;
     justify-content: center;
+    margin: auto;
   }
   .footer__name {
     margin-bottom: 9px;
