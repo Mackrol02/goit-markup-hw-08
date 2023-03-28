@@ -286,10 +286,9 @@ footer {
   footer {
     height: 252px;
     min-width: 1440px;
-    display: flex;
+    display: block;
   }
   .footercentr {
-    margin: none;
     min-width: 1440px;
     display: flex;
     justify-content: center;
