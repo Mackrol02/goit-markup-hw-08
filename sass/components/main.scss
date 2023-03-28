@@ -367,6 +367,7 @@
     display: flex;
   }
   .client {
+    min-width: 1440px;
     &__container {
       display: flex;
       min-width: 1440px;
