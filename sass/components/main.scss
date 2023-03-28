@@ -107,6 +107,12 @@
       transform: translateY(150%);
       position: relative;
     }
+    &__centr {
+      display: flex;
+      justify-content: space-evenly;
+      max-width: 1200px;
+      margin: auto;
+    }
   }
 }
 .team img {
@@ -263,16 +269,16 @@
     max-width: 768px;
     margin: auto;
   }
-  .team img {
-    max-width: 354px;
-    height: auto;
-  }
-
   .teamcen {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
+  .team img {
+    max-width: 354px;
+    height: auto;
+  }
+
   .client {
     width: 768px;
 
@@ -360,27 +366,24 @@
   }
   .advantages {
     margin-top: 50px;
-    min-width: 1200px;
+    max-width: 1200px;
     display: flex;
     margin: auto;
   }
-  .main__page {
-    min-width: 1440px;
-  }
 
   .team {
-    min-width: 1200px;
     margin: auto;
+    min-width: 1200px;
+  }
+  .teamcen {
+    display: flex;
+    justify-content: space-evenly;
   }
   .team img {
     max-width: 270px;
     height: auto;
   }
-  .teamcen {
-    min-width: 1200px;
-    display: flex;
-    margin: auto;
-  }
+
   .client {
     min-width: 1200px;
     margin: auto;
