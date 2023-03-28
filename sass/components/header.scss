@@ -290,15 +290,15 @@ a {
 .navigation__studio:visited {
   transform: translateY(0);
 }
-/*
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
   .navigation {
     display: block;
     transform: translateY(50%);
     position: relative;
   }
   .container {
-    min-width: 1200px;
+    min-width: 1440px;
   }
 
   .grid {
@@ -312,15 +312,14 @@ a {
     margin-left: 10px;
   }
   .width__page {
-    min-width: 1200px;
+    min-width: 1440px;
     height: 80px;
     justify-content: space-around;
     align-items: center;
-    margin-left: 150px;
   }
 }
 
 .navigation__studio::after,
 .navigation__studio:visited {
   transform: translateY(0);
-}*/
+}

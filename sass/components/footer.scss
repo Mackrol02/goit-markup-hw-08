@@ -280,15 +280,15 @@ footer {
     transform: translateY(-10%);
   }
 }
-/*
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
   footer {
     height: 252px;
-    min-width: 1600px;
+    min-width: 1440px;
   }
   .footercen {
     display: flex;
-    margin-left: 200px;
+    margin-left: 120px;
   }
   .footer__name {
     margin-bottom: 9px;
@@ -342,4 +342,4 @@ footer {
     margin-left: 24px;
     transform: translateY(-10%);
   }
-}*/
+}

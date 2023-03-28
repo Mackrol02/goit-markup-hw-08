@@ -8,6 +8,7 @@
     justify-content: space-around;
   }
 }
+
 .feature__an {
   text-align: center;
   margin-bottom: 25px;
@@ -82,10 +83,11 @@
 
     &__title {
       text-align: center;
+      justify-content: center;
       margin-top: 50px;
       font-weight: 700;
       margin-bottom: 30px;
-      color: var(--blacklight-color);
+      color: var(--black-color);
     }
     &__label {
       background-color: rgba(47, 48, 58, 0.8);
@@ -312,9 +314,6 @@
     min-width: 1200px;
     display: flex;
   }
-  body {
-    margin-left: 70px;
-  }
 
   .team {
     min-width: 1200px;
@@ -340,6 +339,42 @@
       max-width: 270px;
     }
   }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .center {
+    max-width: 1440px;
+    margin-left: 100px;
+  }
+  .advantages {
+    margin-top: 50px;
+    max-width: 1440px;
+    display: flex;
+  }
+  .main__page {
+    max-width: 1440px;
+  }
+
+  .team {
+    max-width: 1440px;
+  }
+  .team img {
+    max-width: 270px;
+    height: auto;
+  }
+  .teamcen {
+    max-width: 1440px;
+    display: flex;
+  }
+  .client {
+    &__container {
+      display: flex;
+      max-width: 1440px;
+    }
+    &__name {
+      max-width: 1440px;
+    }
+  }
   .work {
     justify-content: space-around;
     margin: auto;
@@ -348,10 +383,11 @@
 
     &__title {
       text-align: center;
+      justify-content: center;
       margin-top: 50px;
       font-weight: 700;
       margin-bottom: 30px;
-      color: var(--blacklight-color);
+      color: var(--black-color);
     }
     &__label {
       background-color: rgba(47, 48, 58, 0.8);
@@ -366,36 +402,3 @@
     }
   }
 }
-/*
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
-  .advantages {
-    margin-top: 50px;
-    max-width: 1600px;
-    display: flex;
-  }
-  .centr {
-    margin-left: 200px;
-  }
-  .team {
-    max-width: 1600px;
-  }
-  .team img {
-    max-width: 270px;
-    height: auto;
-  }
-  .teamcen {
-    max-width: 1600px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-  }
-  .client {
-    &__container {
-      display: flex;
-      max-width: 1600px;
-    }
-    &__name {
-      max-width: 1600px;
-    }
-  }
-}*/
