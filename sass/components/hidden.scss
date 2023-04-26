@@ -252,29 +252,29 @@ textarea {
   .modal {
     top: 10%;
     left: 34%;
-    min-width: 500px;
+    width: 500px;
     &__form {
-      max-width: 500px;
+      width: 500px;
     }
     &__text {
-      max-width: 420px;
+      width: 420px;
     }
   }
   .inputs {
     &__name {
-      min-width: 420px;
+      width: 420px;
     }
 
     &__tel {
-      min-width: 420px;
+      width: 420px;
     }
 
     &__email {
-      min-width: 420px;
+      width: 420px;
     }
 
     &__komentarz {
-      min-width: 420px;
+      width: 420px;
     }
     &__namesvg {
       top: 20.75%;
