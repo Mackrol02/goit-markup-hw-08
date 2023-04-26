@@ -262,19 +262,19 @@ textarea {
   }
   .inputs {
     &__name {
-      width: 420px;
+      max-width: 420px;
     }
 
     &__tel {
-      width: 420px;
+      max-width: 420px;
     }
 
     &__email {
-      width: 420px;
+      max-width: 420px;
     }
 
     &__komentarz {
-      width: 420px;
+      max-width: 420px;
     }
     &__namesvg {
       top: 20.75%;
