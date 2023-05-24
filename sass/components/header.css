@@ -1,0 +1,306 @@
+.main__page {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white-color);
+  color: var(--body-color);
+}
+
+header {
+  display: flex;
+  max-width: 479;
+  height: 60px;
+}
+
+.header__name {
+  position: relative;
+  transform: translate(-50%, 50%);
+}
+
+.header__name-blue {
+  color: var(--blue-color);
+}
+
+.header__name-black {
+  color: var(--black-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  display: none;
+}
+.navigation__studio {
+  color: var(--blacklight-color);
+}
+.navigation__studio__studio:hover {
+  color: var(--blue-color);
+  cursor: pointer;
+  font-weight: 500;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__studio__studio::after, .navigation__studio__studio:visited {
+  content: "";
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue-color);
+  color: var(--blue-color);
+  display: block;
+  position: relative;
+  transform: translateY(1200%);
+}
+.navigation__portfolio {
+  color: var(--blacklight-color);
+}
+.navigation__portfolio:hover {
+  color: var(--blue-color);
+  cursor: pointer;
+  font-weight: 500;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__contacts {
+  color: var(--blacklight-color);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.navigation__contacts:hover {
+  color: var(--blue-color);
+  cursor: pointer;
+  font-weight: 500;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__mail {
+  color: var(--grey-color);
+}
+.header__mail:hover {
+  color: var(--blue-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__mail .envelope {
+  margin-right: 10px;
+  --color4: var(--grey-color);
+}
+.header__mail .envelope:hover {
+  --color4: var(--blue-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__tel {
+  color: var(--grey-color);
+}
+.header__tel:hover, .header__tel:focus {
+  color: var(--red-color);
+}
+.header__tel .smartphon {
+  margin-right: 10px;
+  --color4: var(--grey-color);
+}
+.header__tel .smartphon:hover {
+  --color4: var(--blue-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__studioport {
+  color: var(--blacklight-color);
+}
+.navigation__studioport:hover {
+  color: var(--blue-color);
+  cursor: pointer;
+  font-weight: 500;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__portfolioport {
+  color: var(--blacklight-color);
+}
+.navigation__portfolioport:hover {
+  color: var(--blue-color);
+  cursor: pointer;
+  font-weight: 500;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__portfolioport::after, .navigation__portfolioport:visited {
+  content: "";
+  width: 100%;
+  height: 4px;
+  color: var(--blue-color);
+  background-color: var(--blue-color);
+  display: block;
+  transform: translateY(1000%);
+}
+
+.navigation__contacts {
+  color: var(--blacklight-color);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.navigation__contacts:hover {
+  color: var(--blue-color);
+  cursor: pointer;
+  font-weight: 500;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__mail {
+  color: var(--grey-color);
+}
+.header__mail:hover {
+  color: var(--blue-color);
+}
+.header__mail .envelope {
+  margin-right: 10px;
+  --color4: var(--grey-color);
+}
+.header__mail .envelope:hover {
+  --color4: var(--blue-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__tel {
+  color: var(--grey-color);
+}
+.header__tel:hover, .header__tel:focus {
+  color: var(--red-color);
+}
+.header__tel .smartphon {
+  margin-right: 10px;
+  --color4: var(--grey-color);
+}
+.header__tel .smartphon:hover {
+  --color4: var(--blue-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*@media screen and (min-width: 480px) and (max-width: 767px) {
+  header {
+    min-width: 767;
+  }
+}*/
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: block;
+    position: relative;
+    transform: translateY(50%);
+  }
+  .header__name {
+    margin-top: 36px;
+  }
+  .grid {
+    transform: translateX(15%);
+    display: grid;
+    grid-template-areas: "mail" "tel";
+  }
+  header {
+    width: 768px;
+  }
+  .header__tel {
+    grid-area: tel;
+  }
+  .header__mail {
+    grid-area: mail;
+  }
+  .navigation__studio::after,
+  .navigation__studio:visited {
+    transform: translateY(0);
+  }
+}
+/*@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation {
+    display: block;
+  }
+  .header__name {
+    transform: translateX(-15%);
+  }
+
+  .grid {
+    transform: translateX(15%);
+    gap: 10px;
+    display: grid;
+    grid-template-areas:
+      "mail"
+      "tel";
+  }
+  .width__page {
+    max-width: 1199px;
+  }
+  header {
+    justify-content: space-evenly;
+    max-width: 1199px;
+    height: 80px;
+  }
+
+  .header__tel {
+    grid-area: tel;
+  }
+  .header__mail {
+    grid-area: mail;
+  }
+  .navigation__studio::after,
+  .navigation__studio:visited {
+    transform: translateY(0);
+  }
+}*/
+/*@media screen and (min-width: 1200px) {
+  .navigation {
+    display: block;
+    transform: translateY(50%);
+    position: relative;
+  }
+  .container {
+    min-width: 1200px;
+  }
+
+  .grid {
+    display: flex;
+  }
+  .header__name {
+    position: relative;
+    transform: translateY(40%);
+  }
+  .header__tel {
+    margin-left: 10px;
+  }
+  .width__page {
+    min-width: 1200px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.navigation__studio::after,
+.navigation__studio:visited {
+  transform: translateY(0);
+}
+*/
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .navigation {
+    display: block;
+    padding-top: 10px;
+  }
+  .container {
+    min-width: 1200px;
+  }
+  .grid {
+    display: flex;
+  }
+  .header__tel {
+    margin-left: 10px;
+  }
+  .width__page {
+    min-width: 1440px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.navigation__studio::after,
+.navigation__studio:visited {
+  transform: translateY(0);
+}/*# sourceMappingURL=header.css.map */

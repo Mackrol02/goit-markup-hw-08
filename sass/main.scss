@@ -1,8 +1,15 @@
-@import "./utils/vars.scss";
-@import "./components/header.scss";
-@import "./components/mobilemenu.scss";
-@import "./components/hidden.scss";
-@import "./components/form.scss";
-@import "./components/main.scss";
-@import "./components/portfolio.scss";
-@import "./components/footer.scss";
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/globals';
+
+@import './components/header';
+@import './components/hero';
+@import './components/advantages';
+@import './components/services';
+@import './components/team';
+@import './components/clients';
+@import './components/portfolio';
+@import './components/footer';
+@import './components/mobile-menu';
+@import './components/modal';
+@import './components/logo';
