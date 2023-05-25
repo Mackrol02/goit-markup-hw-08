@@ -1,0 +1,43 @@
+.advantages {
+  padding: 60px 10px;
+
+  &__box {
+    height: 120px;
+    padding-top: 25px;
+    text-align: center;
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
+  &__title {
+    padding-top: 20px;
+    width: 270px;
+    height: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #212121;
+  }
+  &__text {
+    height: 50px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  &__list {
+    margin: 10px 0 10px 0;
+    height: 250px;
+    @include tablet {
+      width: 354px;
+      height: 251px;
+      gap: 30px;
+    }
+  }
+}
