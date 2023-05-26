@@ -1,0 +1,78 @@
+.team {
+  width: 100%;
+  text-align: center;
+
+  &__name {
+    color: var(--blacklight-color);
+    font-weight: 700;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__card {
+    background-color: var(--whitestudio-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+}
+.teamcen {
+  @include tablet {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  @include desktop {
+    max-width: 1170px;
+    display: flex;
+  }
+}
+.space__team {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+.icon__linkedin {
+  --color3: var(--color-icon);
+  --color2: var(--white-color);
+  &:hover {
+    --color3: var(--white-color);
+    --color2: var(--blue-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.icon__facebook {
+  --color3: var(--color-icon);
+  --color2: var(--white-color);
+  &:hover {
+    --color3: var(--white-color);
+    --color2: var(--blue-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.icon__twitter {
+  --color3: var(--color-icon);
+  --color2: var(--white-color);
+  &:hover {
+    --color3: var(--white-color);
+    --color2: var(--blue-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.icon__instagram {
+  --color3: var(--color-icon);
+  --color2: var(--white-color);
+  &:hover {
+    --color3: var(--white-color);
+    --color2: var(--blue-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

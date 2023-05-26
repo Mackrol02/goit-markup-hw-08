@@ -1,0 +1,38 @@
+.services {
+  display: none;
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  &__centr {
+    padding-top: 50px;
+    max-width: 1170px;
+    display: flex;
+    gap: 30px;
+  }
+  &__label {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    transform: translateY(-100%);
+    background: rgba(47, 48, 58, 0.8);
+  }
+  &__label-position {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 25px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+  @include desktop {
+    display: block;
+  }
+}
