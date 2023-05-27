@@ -3,6 +3,7 @@
   padding-bottom: 94px;
   text-align: center;
   justify-content: center;
+  margin-left: -15px;
 
   &__container {
     width: 100%;
@@ -44,4 +45,7 @@
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
+}
+.logo__center {
+  padding-top: 15px;
 }

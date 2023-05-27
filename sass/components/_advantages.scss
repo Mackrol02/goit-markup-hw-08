@@ -32,6 +32,9 @@
     text-transform: uppercase;
 
     color: #212121;
+    @include tablet {
+      text-align: left;
+    }
   }
   &__text {
     height: 50px;
@@ -41,7 +44,6 @@
     color: #757575;
     padding-top: 20px;
     margin-bottom: 10px;
-    text-align: center;
   }
   &__list {
     margin: 10px 0 10px 0;

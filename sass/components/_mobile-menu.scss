@@ -49,13 +49,17 @@
     line-height: 46.88px;
     letter-spacing: 2%;
     color: var(--black-color);
-
     &:hover {
       color: var(--blue-color);
     }
   }
 }
-
+.mobile-menu > li:first-child {
+  padding-bottom: 32px;
+}
+.mobile-menu > li:last-child {
+  padding-top: 32px;
+}
 .menu__studio {
   font-weight: 500;
   font-size: 40px;
@@ -76,14 +80,24 @@
     font-size: 20px;
     line-height: 46.88px;
     letter-spacing: 2%;
-    color: var(--black-color);
+    color: #757575;
+    text-decoration: none;
 
     &:hover {
       color: var(--blue-color);
     }
 
     &--phone {
-      //TODO STYLE PHONE
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+      color: #757575;
+      text-decoration: none;
+      padding-top: 32px;
+    }
+    &:hover {
+      color: var(--blue-color);
     }
   }
 }
@@ -97,8 +111,8 @@
   &__item {
     border-right: 1px solid #ececec;
     padding-right: 10px;
-    // TODO STYLE
-
+    text-decoration: none;
+    color: #2196f3;
     &:last-child {
       border-right: none;
     }

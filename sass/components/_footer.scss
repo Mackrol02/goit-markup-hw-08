@@ -156,6 +156,10 @@
 
 .input {
   margin-top: 20px;
+  display: grid;
+  grid-template-columns:
+    'email'
+    'but';
   @include desktop {
     display: flex;
   }
@@ -170,7 +174,7 @@
       border: 1px solid rgba(255, 255, 255, 0.3);
     }
     @include tablet {
-      margin-left: 140px;
+      margin-left: 20px;
       width: 450px;
       display: grid;
       grid-template-columns:
@@ -183,6 +187,7 @@
     }
   }
   &__button {
+    text-align: center;
     color: var(--color-footer-email-input);
     background-color: var(--color-bottom-footer);
     border: none;
@@ -191,7 +196,7 @@
     height: 50px;
     font-size: 16px;
     margin-left: 5px;
-    margin-top: 10px;
+    margin-top: 60px;
     grid-area: but;
     position: absolute;
     margin-left: 50px;
