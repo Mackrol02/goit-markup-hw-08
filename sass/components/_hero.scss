@@ -1,63 +1,55 @@
 .hero {
-  background-image: url(https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1685923200&Signature=MeyUIzQbmsfJx5y~al43HPNIhbe4N5wu8VF01eMo10R4gZYBB-txFkf-drgYRv8FttkZ1oVFrLJER32WShOxKbMfTun1uY3TUt140sbxuOKxhC3MkfS8SCZ2nFIZywqdRuvRtMf0h29XFpdbkl0V28y~NEAnbrtK01hdb4tyr-uK~NbPYw6RooCS3yUnIwjkgBP-VQxWpxkewpRilqhutUY0QYJBanVHWTJbD8ilZX8O2oUIjZ8NgSdDJjNcNBwYiD6UtiPtEsP0Patq6wrej~UnYjx9lezH-jewg0cPk-xVmOPeFtFdwsSHkq~Fks-b96SF1YyFA22qwn4rzndN7w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
   height: 400px;
   background-repeat: no-repeat;
-  width: 100%;
-  padding: 70px 20px;
+  background-position: center;
+  padding: 118px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1685923200&Signature=MeyUIzQbmsfJx5y~al43HPNIhbe4N5wu8VF01eMo10R4gZYBB-txFkf-drgYRv8FttkZ1oVFrLJER32WShOxKbMfTun1uY3TUt140sbxuOKxhC3MkfS8SCZ2nFIZywqdRuvRtMf0h29XFpdbkl0V28y~NEAnbrtK01hdb4tyr-uK~NbPYw6RooCS3yUnIwjkgBP-VQxWpxkewpRilqhutUY0QYJBanVHWTJbD8ilZX8O2oUIjZ8NgSdDJjNcNBwYiD6UtiPtEsP0Patq6wrej~UnYjx9lezH-jewg0cPk-xVmOPeFtFdwsSHkq~Fks-b96SF1YyFA22qwn4rzndN7w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
 
   @include desktop {
-    height: 680px;
-    padding-top: 200px;
+    height: 600px;
+    padding: 200px 0;
   }
   &__title {
-    position: absolute;
-    padding-top: 118;
     font-weight: 900;
     font-size: 26px;
     line-height: 42px;
-
+    max-width: 365px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: #ffffff;
-
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     @include desktop {
       font-size: 44px;
     }
   }
 
   &__button {
-    justify-content: center;
-    position: absolute;
-    width: 117px;
-    height: 30px;
-
-    font-style: normal;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-
     display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
-
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
     width: 200px;
     height: 50px;
-
+    border: none;
     background: #2196f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-top: 130px;
-    margin-left: 40px;
-
-    @include tablet {
-      margin-left: 240px;
-    }
-    @include desktop {
-      margin-left: 480px;
-    }
   }
 }
