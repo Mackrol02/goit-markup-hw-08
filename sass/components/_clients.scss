@@ -43,7 +43,9 @@
     }
   }
 }
-
+.logo__center {
+  padding: 25px 0;
+}
 .client__logo:hover > .logo__center > .logo__link > .logo__client {
   --color3: var(--blue-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
