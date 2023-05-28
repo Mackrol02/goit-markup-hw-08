@@ -1,6 +1,7 @@
 .footer {
   background: var(--footercolor);
   height: auto;
+  margin-top: 12px;
   @include tablet {
   }
   @include desktop {
@@ -12,8 +13,9 @@
   }
   &__name {
     margin-bottom: 9px;
-    padding-top: 60px;
     font-size: 26px;
+    margin-top: 12px;
+
     font-weight: 700;
     text-align: center;
     margin-right: auto;
@@ -23,7 +25,6 @@
     }
     @include desktop {
       text-align: left;
-      padding-bottom: 60px;
     }
   }
 
@@ -68,6 +69,7 @@
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 12px;
 
   @include tablet {
     max-width: 206px;
@@ -77,8 +79,7 @@
   &__name {
     color: var(--white-color);
     font-size: 16px;
-    margin-bottom: 20px;
-    margin-top: 60px;
+
     &:hover {
       color: var(--blue-color);
     }
@@ -89,6 +90,7 @@
   &__icon {
     min-width: 206px;
     gap: 10px;
+    margin-top: 12px;
 
     .linkedin {
       --color3: var(--white-color);
@@ -137,6 +139,7 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 300px;
+  margin-top: 12px;
 
   @include tablet {
     max-width: 450px;
@@ -146,13 +149,10 @@
   }
 
   &__footer {
-    margin-top: 30px;
-
     font-size: 14px;
     font-weight: 700;
   }
   &__title {
-    margin-top: 60px;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -170,20 +170,24 @@
 }
 
 .input {
-  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  margin-top: 12px;
+
   @include tablet {
   }
   @include desktop {
     display: flex;
     gap: 10px;
+    align-items: center;
   }
 
   &__email {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 12px;
+
     width: 300px;
     height: 50px;
     background-color: var(--color-input-footer);
@@ -209,14 +213,13 @@
     width: 200px;
     height: 50px;
     font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin-top: 12px;
+
     margin-left: auto;
     margin-right: auto;
     @include tablet {
     }
     @include desktop {
-      margin-top: 0;
     }
   }
   &__span {

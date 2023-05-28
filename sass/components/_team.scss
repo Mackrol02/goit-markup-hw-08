@@ -32,6 +32,7 @@
     justify-content: center;
     padding-bottom: 30px;
     padding-top: 16px;
+    gap: 10px;
   }
   &__discript {
     margin-top: 10px;
@@ -58,6 +59,7 @@
   font-weight: 500;
   font-size: 16px;
 }
+
 .icon__linkedin {
   --color3: var(--color-icon);
   --color2: var(--white-color);

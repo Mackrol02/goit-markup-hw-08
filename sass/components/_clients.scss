@@ -43,11 +43,8 @@
     }
   }
 }
-.logo__center {
-  padding-top: 15px;
-}
 
-.client__logo > .logo__center > .logo__client:hover {
+.client__logo:hover > .logo__center > .logo__link > .logo__client {
   --color3: var(--blue-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
