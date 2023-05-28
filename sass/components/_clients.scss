@@ -24,13 +24,15 @@
     text-align: center;
     justify-content: center;
     margin-bottom: 50px;
+    font-size: 36px;
     color: var(--blacklight-color);
   }
   &__logo {
     border: var(--color-icon) solid 1px;
     border-radius: 4px;
-    width: 130px;
-    height: 92px;
+    min-width: 130px;
+    height: auto;
+
     @include tablet {
       width: 210px;
     }
@@ -43,4 +45,9 @@
 }
 .logo__center {
   padding-top: 15px;
+}
+
+.client__logo > .logo__center > .logo__client:hover {
+  --color3: var(--blue-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

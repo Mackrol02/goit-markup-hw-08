@@ -1,28 +1,29 @@
 .footer {
   background: var(--footercolor);
-  height: 600px;
+  height: auto;
   @include tablet {
-    height: 463px;
-    max-width: 100%;
-    display: flex;
   }
   @include desktop {
-    display: flex;
-    height: 252px;
   }
-
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   &__name {
     margin-bottom: 9px;
     padding-top: 60px;
     font-size: 26px;
     font-weight: 700;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     @include tablet {
-      position: absolute;
-      min-width: 250px;
+      max-width: 250px;
     }
     @include desktop {
       text-align: left;
+      padding-bottom: 60px;
     }
   }
 
@@ -65,29 +66,34 @@
 
 .social {
   text-align: center;
-  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+
   @include tablet {
-    position: relative;
-    padding-left: 500px;
-    padding-top: 10px;
+    max-width: 206px;
   }
   @include desktop {
-    padding-left: 0px;
-    transform: translateX(-13%);
   }
   &__name {
     color: var(--white-color);
     font-size: 16px;
     margin-bottom: 20px;
     margin-top: 60px;
+    &:hover {
+      color: var(--blue-color);
+    }
+    @include desktop {
+      text-align: left;
+    }
   }
   &__icon {
     min-width: 206px;
+    gap: 10px;
 
     .linkedin {
       --color3: var(--white-color);
       --color2: var(--color-foticon);
-      &:hover {
+      &:is(:hover, :focus) {
         --color3: var(--white-color);
         --color2: var(--blue-color);
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -97,7 +103,7 @@
     .facebook {
       --color3: var(--white-color);
       --color2: var(--color-foticon);
-      &:hover {
+      &:is(:hover, :focus) {
         --color3: var(--white-color);
         --color2: var(--blue-color);
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -107,7 +113,7 @@
     .twitter {
       --color3: var(--white-color);
       --color2: var(--color-foticon);
-      &:hover {
+      &:is(:hover, :focus) {
         --color3: var(--white-color);
         --color2: var(--blue-color);
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -118,7 +124,7 @@
       --color3: var(--white-color);
       --color2: var(--color-foticon);
 
-      &:hover {
+      &:is(:hover, :focus) {
         --color3: var(--white-color);
         --color2: var(--blue-color);
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -128,16 +134,15 @@
 }
 .form {
   color: var(--color-footer-email-input);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 300px;
+
   @include tablet {
-    position: relative;
-    padding-top: 80px;
+    max-width: 450px;
   }
   @include desktop {
     width: 570px;
-    padding-top: 0px;
-    position: absolute;
-    margin-left: 500px;
-    transform: translateY(-100%);
   }
 
   &__footer {
@@ -154,43 +159,45 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
 
     color: #ffffff;
+    @include desktop {
+      text-align: left;
+    }
   }
 }
 
 .input {
   margin-top: 20px;
-  display: grid;
-  grid-template-columns:
-    'email'
-    'but';
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  @include tablet {
+  }
   @include desktop {
     display: flex;
+    gap: 10px;
   }
 
   &__email {
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
     height: 50px;
     background-color: var(--color-input-footer);
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    grid-area: email;
     &__email:active {
       border: 1px solid rgba(255, 255, 255, 0.3);
     }
     @include tablet {
-      margin-left: 20px;
       width: 450px;
-      display: grid;
-      grid-template-columns:
-        'email'
-        'but';
     }
     @include desktop {
       width: 338px;
-      margin-left: 120px;
     }
   }
   &__button {
@@ -202,17 +209,14 @@
     width: 200px;
     height: 50px;
     font-size: 16px;
-    margin-left: 5px;
-    margin-top: 60px;
-    grid-area: but;
-    position: absolute;
-    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
     @include tablet {
-      margin-left: 270px;
     }
     @include desktop {
-      margin-left: 475px;
-      margin-top: 0px;
+      margin-top: 0;
     }
   }
   &__span {
